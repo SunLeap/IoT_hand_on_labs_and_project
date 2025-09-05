@@ -70,7 +70,8 @@ This project combines **sensing, actuation, and networking** with a real-world c
 ![Task3](images/task3.png)
 
 ### Task 4
-![Task4](https://youtu.be/4GJf8xtvUY0?si=L5LK08E8kpZ7d6kK)
+[Watch task4 on youtube](https://youtu.be/4GJf8xtvUY0?si=L5LK08E8kpZ7d6kK_)
+
 
 ### Task 5
 ![Task 5](images/task5.png)
