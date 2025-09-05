@@ -60,5 +60,19 @@ This project combines **sensing, actuation, and networking** with a real-world c
    ALLOWED_CHAT_IDS = {123456789}  # Replace with your chat/group ID
 
 ## OUTPUT OF THE CODE
+### Task 1
 ![Task1](images/task1.png)
+
+### Task 2
+![Task2](images/task2.png)
+
+### Task 3
+![Task3](images/task3.png)
+
+### Task 4
+![Task4](https://youtu.be/4GJf8xtvUY0?si=L5LK08E8kpZ7d6kK)
+
+### Task 5
+![Task 5](images/task5.png)
+
 
