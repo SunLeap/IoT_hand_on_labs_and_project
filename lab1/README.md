@@ -75,5 +75,5 @@ This project combines **sensing, actuation, and networking** with a real-world c
 
 ### Task 5
 ![Task 5](images/task5.png)
-
+From task 5 above, demonstrate that when the wifi gets disconnected, it will auto-reconnect. 
 
