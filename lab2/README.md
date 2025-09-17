@@ -80,22 +80,26 @@ The lab emphasizes **web–hardware interaction** and **event-driven IoT design*
 ---
 
 ## Output of the code and demonstration
+---
 
 ### Task 1
-
 [Click here to see the demonstration of Task 1](https://www.youtube.com/shorts/zoASdev9bng)
 
-### Task 2
+---
 
+### Task 2
 ![Task 2](Task2.png)
 
-#### Task 3
+---
 
+### Task 3
 ![Task 3](Task3.JPG)
 
-### Task 4
+---
 
+### Task 4
 [Click here to see the demonstration of Task 4](https://www.youtube.com/shorts/WLqWbdPNkzw)
 
+---
 
 
