@@ -40,7 +40,7 @@ The lab emphasizes **web–hardware interaction** and **event-driven IoT design*
 
 ---
 
-## ⚙Setup Instructions
+## Setup Instructions
 
 1. Flash ESP32 with MicroPython firmware.
 2. Connect ESP32 via USB and open **Thonny IDE**.
