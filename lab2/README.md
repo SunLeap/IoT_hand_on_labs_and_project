@@ -36,8 +36,7 @@ The lab emphasizes **web–hardware interaction** and **event-driven IoT design*
   * VCC → 5V, GND → GND
 * **LCD I²C** → SDA (GPIO21), SCL (GPIO22), VCC (3.3V), GND
 
-*(Insert wiring diagram or breadboard photo here)*
-
+![Wiring Diagram](wiring.png)
 ---
 
 ## Setup Instructions
