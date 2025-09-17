@@ -92,7 +92,7 @@ The lab emphasizes **web–hardware interaction** and **event-driven IoT design*
 
 #### Task 3
 
-![Task 3](Task3JPG)
+![Task 3](lab2/Task3.JPG)
 
 ### Task 4
 
