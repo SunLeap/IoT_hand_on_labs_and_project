@@ -1,10 +1,6 @@
-Here’s a **README.md** draft tailored for **Task 5 – Documentation** from your lab:
-
----
-
 # IoT Webserver with LED, Sensors, and LCD Control
 
-## 📌 Overview
+## Overview
 
 This project implements an **ESP32-based IoT system using MicroPython**. The device hosts a webserver that allows users to:
 
@@ -17,19 +13,7 @@ The lab emphasizes **web–hardware interaction** and **event-driven IoT design*
 
 ---
 
-## 🎯 Learning Outcomes
-
-By completing this project, you will be able to:
-
-* Build and deploy a MicroPython webserver.
-* Control GPIO devices (LED).
-* Interface with sensors (DHT11 and ultrasonic).
-* Display real-time sensor values and custom text on an LCD.
-* Document system wiring, usage, and operation.
-
----
-
-## 🛠 Equipment
+## Equipment
 
 * ESP32 Development Board (with MicroPython firmware)
 * DHT11 Temperature/Humidity Sensor
@@ -41,7 +25,7 @@ By completing this project, you will be able to:
 
 ---
 
-## 🔌 Wiring Diagram
+## Wiring Diagram
 
 * **LED** → GPIO2 (with appropriate resistor)
 * **DHT11** → GPIO4 (VCC to 3.3V, GND to GND)
@@ -56,7 +40,7 @@ By completing this project, you will be able to:
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙Setup Instructions
 
 1. Flash ESP32 with MicroPython firmware.
 2. Connect ESP32 via USB and open **Thonny IDE**.
@@ -76,7 +60,7 @@ By completing this project, you will be able to:
 
 ---
 
-## 💻 Usage Instructions
+## Usage Instructions
 
 1. Open a browser and enter ESP32’s IP (e.g., `http://192.168.x.x`).
 2. **LED Control**
@@ -96,31 +80,5 @@ By completing this project, you will be able to:
 
 ---
 
-## 📸 Evidence
+## Output of the code
 
-Your submission must include:
-
-* **Wiring photo/diagram**
-* **Web UI screenshot with sensor readings**
-* **Photo of LCD showing values/text**
-* **Demo video (60–90s)** covering:
-
-  * LED ON/OFF via browser
-  * Temperature/Distance on LCD
-  * Custom text sent from textbox → LCD
-
----
-
-## 📂 Submission
-
-* Push all files to a **private GitHub repository**.
-* Include:
-
-  * Source code (`main.py`, `lcd_api.py`, `i2c_lcd.py`)
-  * README.md (this file with wiring + usage)
-  * Screenshots and demo video
-* Add your instructor as a collaborator.
-
----
-
-Would you like me to **generate a wiring diagram (draw\.io style)** for you, so you can directly embed it in the README?
