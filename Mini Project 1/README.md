@@ -97,4 +97,4 @@ Connect the components to the ESP32 GPIO pins as defined in the code:
 6.  
 
 ## 7. Output of the code
-Here is the link video to the output of the code [Youtube link]()
+Here is the link video to the output of the code [Youtube link](https://youtu.be/B43NalydF0g)
