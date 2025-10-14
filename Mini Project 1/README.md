@@ -52,6 +52,8 @@ Connect the components to the ESP32 GPIO pins as defined in the code:
 
 **Note:** Ensure all components are connected to a common ground (GND) and that the Servo and LCD are powered by a stable 5V source.
 
+![Wiring Digram](wiring.jpg)
+
 ## 5. Software & Setup
 
 ### Prerequisites
