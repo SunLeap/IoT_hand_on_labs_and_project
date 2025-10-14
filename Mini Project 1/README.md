@@ -94,3 +94,7 @@ Connect the components to the ESP32 GPIO pins as defined in the code:
 3.  **Parking:** The car parks, and an ID is assigned. The web dashboard and LCD update.
 4.  **Monitoring:** View the live status on the web dashboard by navigating to the ESP32's IP address.
 5.  **Exit:** The car leaves, the system calculates the fee, and a receipt is sent to Telegram. The slot becomes free.
+6.  
+
+## 7. Output of the code
+Here is the link video to the output of the code [Youtube link]()
