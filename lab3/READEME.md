@@ -1,6 +1,6 @@
-#IoT Atmospheric Sensor using BMP280 and ESP32
+# IoT Atmospheric Sensor using BMP280 and ESP32
 
-##Project Overview
+## Project Overview
 In this lab, I built a small IoT environmental monitoring system using an ESP32 and a BMP280 sensor.
 The BMP280 measures temperature, pressure, and altitude, and the ESP32 reads these values and displays them through the serial monitor.
 This system can also be expanded to send the sensor data to the cloud or an IoT dashboard in real time.
