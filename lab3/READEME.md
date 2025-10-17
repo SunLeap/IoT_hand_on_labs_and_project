@@ -43,7 +43,7 @@ ESP32 → BMP280 connections:
 
 ## Wiring Diagram
 
-*(Insert your wiring image here if available)*  
+![Wiring Diagram](wiring_lab3.png)
 Example connection:  
 `ESP32 GPIO22 → BMP280 SCL`  
 `ESP32 GPIO21 → BMP280 SDA`
@@ -55,6 +55,34 @@ Example connection:
 1. Flash your ESP32 with **MicroPython** firmware.  
 2. Open **Thonny IDE** and connect to your ESP32 board.  
 3. Upload the `bmp280.py` driver file to your ESP32.  
-4. Create and save the following code as `main.py`:
+4. Create and save the code as `main.py`:
+   Open the `main.py` file and update the following configuration variables with your own details:
+
+    ```python
+    # WiFi Credentials
+    WIFI_SSID = 'Your_WiFi_Name'
+    WIFI_PASSWORD = 'Your_WiFi_Password'
+   # MQTT setup 
+    MQTT_BROKER = "test.mosquitto.org"   # public test broker
+    MQTT_PORT   = 1883                   # default MQTT port
+    CLIENT_ID   = b"Your ID"
+    TOPIC       = b"Your Topic"     # your custom topic
+    
+---
+
+## How It Works
+1. The ESP32 initializes communication with the BMP280 sensor over the I²C protocol.
+2. The BMP280 measures the barometric pressure and temperature of the environment.
+3. Using these readings, it estimates altitude based on the barometric formula.
+4. The data is displayed every 2 seconds through the Thonny serial console.
+5. The system can later be upgraded to publish this data to ThingsBoard dashboards.
+
+---
+
+## MQTT
+
+---
+
+### ThingsBoard 
 
 
