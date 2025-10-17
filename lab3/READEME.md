@@ -3,7 +3,7 @@
 ## Project Overview
 
 In this lab, I built a small IoT environmental monitoring system using an **ESP32** and a **BMP280** sensor. 
-The BMP280 measures **temperature**, **pressure**, and **altitude**, and the ESP32 reads these values and displays them through the serial monitor. This system send the sensor data to the cloud and display dashboard in real time. The goal of this project is to understand how sensors communicate with microcontrollers using the **I²C interface**, and how to collect and process environmental data accurately.
+The BMP280 measures **temperature**, **pressure**, and **altitude**, and the ESP32 reads these values and displays them through the serial monitor. This system send the sensor data to the cloud and display on dashboard in real time. The goal of this project is to understand how sensors communicate with microcontrollers using the **I²C interface**, and how to collect and process environmental data accurately.
 
 ---
 
