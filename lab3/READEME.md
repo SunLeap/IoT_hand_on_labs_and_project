@@ -3,7 +3,7 @@
 ## Project Overview
 
 In this lab, I built a small IoT environmental monitoring system using an **ESP32** and a **BMP280** sensor.  
-The BMP280 measures **temperature**, **pressure**, and **altitude**, and the ESP32 reads these values and displays them through the serial monitor. This system can also be expanded to send the sensor data to the cloud or an IoT dashboard in real time. The goal of this project is to understand how sensors communicate with microcontrollers using the **I²C interface**, and how to collect and process environmental data accurately.
+The BMP280 measures **temperature**, **pressure**, and **altitude**, and the ESP32 reads these values and displays them through the serial monitor. This system send the sensor data to the cloud and display dashboard in real time. The goal of this project is to understand how sensors communicate with microcontrollers using the **I²C interface**, and how to collect and process environmental data accurately.
 
 ---
 
@@ -14,6 +14,8 @@ The BMP280 measures **temperature**, **pressure**, and **altitude**, and the ESP
 - Understanding how the **I²C communication protocol** works.  
 - How to use **Thonny IDE** to program and upload code to ESP32.  
 - How to calculate **altitude** using pressure data.  
+- How to integrate IoT devices using **MQTT protocol** for efficient cloud communication.  
+- How to connect the ESP32 to **ThingsBoard Cloud** to visualize live telemetry data and build IoT dashboards.  
 - How this sensor can be applied to real-world IoT applications such as **weather stations** or **drone height tracking**.
 
 ---
@@ -74,8 +76,8 @@ Example connection:
 1. The ESP32 initializes communication with the BMP280 sensor over the I²C protocol.
 2. The BMP280 measures the barometric pressure and temperature of the environment.
 3. Using these readings, it estimates altitude based on the barometric formula.
-4. The data is displayed every 2 seconds through the Thonny serial console.
-5. The system can later be upgraded to publish this data to ThingsBoard dashboards.
+4. Random values (10–20) every 5 seconds.
+5. Those datas publish to ThingsBoard dashboards via **MQTT**.
 
 ---
 
@@ -83,6 +85,6 @@ Example connection:
 
 ---
 
-### ThingsBoard 
+## ThingsBoard 
 
 
