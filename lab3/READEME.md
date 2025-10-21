@@ -11,8 +11,7 @@ The BMP280 measures **temperature**, **pressure**, and **altitude**, and the ESP
 
 - How to interface the **BMP280** sensor with an **ESP32** using MicroPython.  
 - How to read **temperature**, **pressure**, and **altitude** data from the sensor.  
-- Understanding how the **I²C communication protocol** works.  
-- How to use **Thonny IDE** to program and upload code to ESP32.  
+- Understanding how the **I²C communication protocol** works.   
 - How to calculate **altitude** using pressure data.  
 - How to integrate IoT devices using **MQTT protocol** for efficient cloud communication.  
 - How to connect the ESP32 to **ThingsBoard Cloud** to visualize live telemetry data and build IoT dashboards.  
