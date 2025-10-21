@@ -81,10 +81,9 @@ Example connection:
 
 ---
 
-## MQTT
+## ThingsBoard + Demostration 
 
----
 
-## ThingsBoard 
+
 
 
