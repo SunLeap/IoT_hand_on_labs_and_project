@@ -82,6 +82,11 @@ Example connection:
 ---
 
 ## ThingsBoard + Demostration 
+![ThingsBoard + Demostration] (IMG_0203.jpeg)
+ 
+[Click here to see the demonstration](https://youtube.com/shorts/PvgM3i8-Fhc?si=KT6ojJBpirkr6Mqx)
+
+
 
 
 
