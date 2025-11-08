@@ -26,7 +26,9 @@ This project demonstrates an IoT data pipeline using an **ESP32** running **Micr
 - VCC → 3.3V  
 - GND → GND  
 - SDA → GPIO21  
-- SCL → GPIO22  
+- SCL → GPIO22
+    
+![Wiring Diagram](images/connection.png)
 
 This wiring enables I²C communication between the ESP32 and BMP280 sensor.
 
