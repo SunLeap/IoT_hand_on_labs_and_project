@@ -126,7 +126,7 @@ Altitude: 64.4 m
    - **Altitude (Bar)**
 
 ### Example Dashboard
-![Grafana BMP Dashboard](Screenshot_2025-11-08_at_6.16.06_PM.png)
+![Grafana BMP Dashboard](images/Dashboard.png)
 
 Each panel updates every 5 seconds as the ESP32 publishes new readings.
 
@@ -149,9 +149,10 @@ Each panel updates every 5 seconds as the ESP32 publishes new readings.
 | Temperature | 26.5 | °C |
 | Altitude | 64.4 | m |
 
+[Watch Demo on Youtube](https://youtu.be/zvKXNWYp2pI?si=fktr1b6D9MFxPnFv)
+
 ---
 
 ## Conclusion
 
-This project extends the previous random-value MQTT lab by integrating a **real sensor (BMP280)** for live environmental data acquisition.  
-It demonstrates the complete IoT data flow — **sensing → transmitting → storing → visualizing** — in a scalable and modular pipeline using **MQTT**, **Node-RED**, **InfluxDB**, and **Grafana**.
+This project showed a **real sensor (BMP280)** for live environmental data acquisition. It demonstrates the complete IoT data flow — **sensing → transmitting → storing → visualizing** — in a scalable and modular pipeline using **MQTT**, **Node-RED**, **InfluxDB**, and **Grafana**.
