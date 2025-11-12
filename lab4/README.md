@@ -25,8 +25,8 @@ This project demonstrates an IoT data pipeline using an **ESP32** running **Micr
 **BMP280 Sensor → ESP32**
 - VCC → 3.3V  
 - GND → GND  
-- SDA → GPIO21  
-- SCL → GPIO22
+- SDA → D21  
+- SCL → D22
     
 ![Wiring Diagram](images/connection.png)
 
@@ -46,7 +46,8 @@ This wiring enables I²C communication between the ESP32 and BMP280 sensor.
    SSID = "YourWiFiName"
    PASSWORD = "YourWiFiPassword"
    BROKER = "test.mosquitto.org"
-   TOPIC = b"/aupp/esp32/bmp"
+   CLIENT_ID = b"Your ID"
+   TOPIC = b"Your Topic"
    ```
 4. The ESP32 will connect to Wi-Fi, read sensor data, and publish values every 5 seconds.
 
@@ -72,17 +73,17 @@ Altitude: 64.4 m
    - **debug**
 3. Configure **mqtt in**:
    - Server: `test.mosquitto.org`
-   - Topic: `/aupp/esp32/bmp`
+   - Topic: `/aupp/esp32/ravy` #Example
 4. In the **function** node, use the following script to split and format the payload:
    ```javascript
-   var data = JSON.parse(msg.payload);
-   msg.measurement = "bmp280";
+   msg.measurement = "environment";  // InfluxDB measurement name
    msg.payload = {
-       pressure: data.pressure,
-       temperature: data.temperature,
-       altitude: data.altitude
-   };
-   return msg;
+    temperature: Number(msg.payload.temperature),
+    pressure: Number(msg.payload.pressure),
+    altitude: Number(msg.payload.altitude)
+};
+
+return msg;
    ```
 5. Connect all nodes → Deploy → Check live data in Debug window.
 
@@ -101,16 +102,16 @@ Altitude: 64.4 m
    ```
 3. Create database and switch to it:
    ```sql
-   CREATE DATABASE bmp_lab;
-   USE bmp_lab;
+   CREATE DATABASE aupp_lab;
+   USE aupp_lab;
    ```
 4. Configure **Node-RED InfluxDB out** node:
-   - Database: `bmp_lab`
-   - Measurement: `bmp280`
+   - Database: `aupp_lab`
+   - Measurement: `environment`
    - Fields: `pressure`, `temperature`, `altitude`
 5. Run a quick check:
    ```sql
-   SELECT * FROM bmp280 ORDER BY time DESC LIMIT 5;
+   SELECT * FROM environment ORDER BY time DESC LIMIT 5;
    ```
 
 ---
@@ -120,7 +121,7 @@ Altitude: 64.4 m
 2. Login (Default: admin / admin)
 3. Add Data Source → **InfluxDB**
    - URL: `http://127.0.0.1:8086`
-   - Database: `bmp_lab`
+   - Database: `aupp_lab` #Example
    - Query Language: `InfluxQL`
 4. Create a dashboard with **three panels**:
    - **Pressure (Gauge)**
