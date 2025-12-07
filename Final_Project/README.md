@@ -144,12 +144,56 @@ if CONTROL_MODE == "AUTO":
 - Auto Mode
 - Manual Mode
 
-# MIT App Inventor
-## Mobile App
+#### Mobile App
 ![Mobile App](images/app.jpg)
 
-## End Point
+#### End Point
 ![End Point](images/endpoint.jpg)
+
+# How To Test (Short Version)
+
+### 1. Upload & Run Code
+- Open `main.py`in Thonny and save to device
+- ESP32 auto-runs on reboot
+- Watch serial output for IP address
+
+### 2. Connect Devices
+- ESP32 connects to Wi-Fi (check Thonny output)
+- Phone + PC must be on SAME Wi-Fi
+- Note the printed IP (ex: 192.168.1.50)
+
+### 3. Test in Browser
+- Open:
+  - `/status`
+  - `/pump/on`
+  - `/pump/off`
+  - `/mode/auto`
+  - `/mode/manual`
+- Confirm JSON + pump movement
+
+### 4. Test Pump Hardware
+- `/pump/on` → pump starts
+- `/pump/off` → pump stops
+- Relay LED should follow pump state
+
+### 5. Auto Mode Test
+- Set `/mode/auto`
+- Soil dry → pump ON
+- Soil wet → pump OFF
+- Telegram sends alerts automatically
+
+### 6. MIT App Test
+- Open app
+- Set ESP IP
+- Press:
+  - Refresh → get sensor values
+  - Pump ON/OFF → check relay
+  - Auto/Manual → switch modes
+
+### 7. Telegram Check
+- You receive:
+  - “Soil dry → Pump ON”
+  - “Soil wet → Pump OFF”
 
 # Future Improvements
 - OLED display
