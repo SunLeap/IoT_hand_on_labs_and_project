@@ -49,9 +49,6 @@ It supports:
 | Android Phone          | Runs MIT App Inventor app               |
 
 
-## Wiring Diagram 
-![Wiring Diagram](docs/wiring.png)
-
 ---
 
 ## System Overview
